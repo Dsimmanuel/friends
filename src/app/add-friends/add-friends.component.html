@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col ">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="card-body">
+                    <form #addfriend="ngForm" (ngSubmit)="AddFriend()">
+                        <div class="form-group">
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <label for="" class="form-label">Name :</label>
+                                <input type="text" [(ngModel)]="friend.name" name="name" class="form-control">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <label for="" class="form-label">Friend Name :</label>
+                                <input type="text" [(ngModel)]="friend.friendName" name="friendName" class="form-control">
+                            </div>
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <label for="" class="form-label">Friend Nick Name :</label>
+                                <input type="text" [(ngModel)]="friend.friendNickName" name="friendNickName" class="form-control">
+                            </div>
+
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <label for="" class="form-label">Describe Your Friend :</label>
+                                <textarea name="describe" [(ngModel)]="friend.DescribeYourFriend" id="DescribeYourFriend" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                            
+                        
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <button class="btn btn-primary">Register</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
